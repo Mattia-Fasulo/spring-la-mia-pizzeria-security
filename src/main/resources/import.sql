@@ -23,3 +23,12 @@ INSERT INTO db_pizzeria.ingredients(name) VALUES('salsiccia');
 INSERT INTO db_pizzeria.ingredients(name) VALUES('friarielli');
 INSERT INTO db_pizzeria.ingredients(name) VALUES('burrata');
 INSERT INTO db_pizzeria.ingredients(name) VALUES("'nduja");
+
+INSERT INTO users (email, first_name, last_name, password) VALUES('john@email.it', 'John', 'Doe', '{noop}john');
+INSERT INTO users (email, first_name, last_name, password) VALUES('jane@email.it', 'Jane', 'Smith','{noop}jane');
+
+INSERT INTO roles (id, name) VALUES(1, 'ADMIN');
+INSERT INTO roles (id, name) VALUES(2, 'USER');
+
+INSERT into users_roles(user_id, roles_id) VALUES(1, 1);
+INSERT into users_roles(user_id, roles_id) VALUES(2, 2);
